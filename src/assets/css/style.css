@@ -1,0 +1,116 @@
+/* Importación de fuentes ***************************************************************************************/
+@font-face{
+    font-family: "roboto";
+    src: url("fonts/Roboto-Regular.ttf");
+}
+
+@font-face{
+    font-family: "unicorn";
+    src: url("fonts/Unicorn Pop.ttf");
+}
+
+@font-face{
+    font-family: "gentium";
+    src: url("fonts//Gentium.TTF");
+}
+
+@font-face{
+    font-family: "woodland";
+    src: url("fonts//Woodland.ttf");
+}
+
+/* Generales ***************************************************************************************************/
+*{list-style: none; box-sizing: border-box; margin: 0px; padding: 0px;}
+
+body{
+    font-family: "roboto", Arial, Helvetica;
+    background: rgb(20, 20, 20);
+    /*position: fixed;*/
+}
+
+/* Barra de Navegación ****************************************************************************************/
+header{
+    width: 100%;
+    background: rgba(20, 20, 20, 1);
+    text-transform: uppercase;
+    text-align: center;
+
+    position: fixed;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0px 10%;
+}
+header ul li{
+    flex-basis: 20%;
+}
+header ul li a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1.5rem 0px;
+}
+header ul li a:hover,
+    .actived{ /*Añadir una clase [Funcionará con el 'routerlinkactive' escrito en el HTML*/
+        background: rgb(0, 112, 6); /*126,0,0*/
+        transition: all 0.7s;
+}
+
+#logo{
+    font-family: "gentium";
+}
+#logo a:hover{
+    background: transparent;
+}
+
+/* Contenedor Principal *******************************************************************************************/
+#content{
+    width: 80%;
+    margin: 0px auto;
+    padding: 6rem 2rem 2rem 2rem;
+    background: rgb(40, 40, 40);
+    color: white;
+    border-radius: 10px;
+}
+
+/* Footer *******************************************************************************************/
+footer{
+    width: 80%;
+    margin: 0px auto;
+    text-align: center;
+    color: rgb(136, 136, 136);
+    margin-top: 2rem;
+}
+
+/* Sobre mi *******************************************************************************************/
+#title{
+    margin: 0px auto;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 4rem;
+}
+#title h1{
+    font-family: woodland;
+    font-size: 10rem;
+    border-bottom: 1px solid #ccc;
+}
+#title h2{
+    margin: 0.5rem 0px;
+}
+#title p{
+    color: rgb(136, 136, 136);
+}
+
+.about{
+    width: 70%;
+    text-align: justify;
+    margin: 0px auto;
+    line-height: 1.5;
+}
+.about h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
