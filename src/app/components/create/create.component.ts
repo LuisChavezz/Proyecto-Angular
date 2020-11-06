@@ -23,6 +23,7 @@ export class CreateComponent implements OnInit {
   }
 
   onSubmit(form){
+    console.log(this.project);
   }
 
 }
