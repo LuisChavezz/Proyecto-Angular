@@ -114,3 +114,45 @@ footer{
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
+
+/* Crear Proyecto *******************************************************************************************/
+.container h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+form label{
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="mail"],
+form textarea{
+    width: 25%;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    border: none;
+    background: rgb(70, 70, 70);
+    color: white;
+    resize: none;
+}
+
+form button,
+form input[type="submit"]{
+    border: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    display: block;
+    border-radius: 15px;
+    cursor: pointer;
+}
+    form button,
+    form input[type="submit"]:hover{
+        background: rgb(70, 70, 70);
+        color: white;
+    }
