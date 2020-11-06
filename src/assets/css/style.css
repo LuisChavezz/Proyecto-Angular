@@ -133,7 +133,7 @@ form input[type="number"],
 form input[type="mail"],
 form textarea{
     width: 25%;
-    padding: 0.2rem 0.5rem;
+    padding: 0.5rem 0.8rem;
     margin-bottom: 1rem;
     border-radius: 15px;
     border: none;
@@ -156,3 +156,14 @@ form input[type="submit"]{
         background: rgb(70, 70, 70);
         color: white;
     }
+
+    form input[disabled]:hover{
+        cursor: not-allowed;
+        background: rgb(40, 40, 40);
+        color: rgb(40, 40, 40);
+    }
+
+.form_error{
+    color: rgb(136, 136, 136);
+    font-size: 15px;
+}
