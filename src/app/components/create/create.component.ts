@@ -28,6 +28,7 @@ export class CreateComponent implements OnInit {
       response => {
         if(response.project){ // Si se recibe el objeto JSON correctamente
           this.status = 'success';
+          form.reset();
         }
         else{
           this.status = 'failed';
