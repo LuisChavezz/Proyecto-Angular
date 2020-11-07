@@ -1,6 +1,15 @@
 <div class="container">
     <h2>{{ title }}</h2>
 
+    <!-- Mensaje postEnvio-->
+    <div class="message success" *ngIf="status == 'success'" >
+        El proyecto ha sido creado éxitosamente. Puedes <a href="#">verlo aquí</a>
+    </div>
+
+    <div class="message failed" *ngIf="status == 'failed'" >
+        El proyecto ha sido creado éxitosamente. Puedes <a href="#">verlo aquí</a>
+    </div>
+
     <!-- ngSubmit, recogerá la información del formulario. Y le damos como parámetro el ngForm para resetearlo -->
     <!-- ngForm será la etiqueta principal del formulario, para hacer referencia -->
     <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
