@@ -18,4 +18,11 @@ export class ProjectService{
     testService(){
         return 'El Servicio funciona correctamente.';
     }
+
+    saveProjects( project: Project ): Observable<any> { //Método que guardará los objetos en la base de datos
+        let params = JSON.stringify( project );
+        let headers = new HttpHeaders().set( 'Content-Type', 'application/json' ); //Save info as Json Object
+
+        return this._http.post( this.url+'save-project', params, {headers: headers} );
+    }
 }
