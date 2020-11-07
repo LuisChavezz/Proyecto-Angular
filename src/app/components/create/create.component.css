@@ -1,0 +1,68 @@
+.container h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.message{
+    width: 100%;
+    
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+.success{
+    background:  rgb(0, 112, 6);
+}
+.failed{
+    background:  rgb(180, 0, 0);
+}
+.message a{
+    color: white;
+}
+
+form label{
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="mail"],
+form textarea{
+    width: 30%;
+    padding: 0.5rem 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
+    border: none;
+    background: rgb(70, 70, 70);
+    color: white;
+    resize: none;
+}
+
+form button,
+form input[type="submit"]{
+    border: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    display: block;
+    border-radius: 15px;
+    cursor: pointer;
+}
+    form button,
+    form input[type="submit"]:hover{
+        background: rgb(70, 70, 70);
+        color: white;
+    }
+
+    form input[disabled]:hover{
+        cursor: not-allowed;
+        background: rgb(40, 40, 40);
+        color: rgb(40, 40, 40);
+    }
+
+.form_error{
+    color: rgb(136, 136, 136);
+    font-size: 15px;
+}
