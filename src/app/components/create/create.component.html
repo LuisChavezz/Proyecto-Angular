@@ -64,7 +64,7 @@
 
         <p>
             <label for="image">Imagen del proyecto</label>
-            <input type="file" name="iamge" placeholder="Subir imágen"/>
+            <input type="file" name="iamge" placeholder="Subir imágen" (change)="fileChangeEvent($event)"/>
         </p>
 
         <input type="submit" value="Enviar" [disabled]="!projectForm.form.valid">
