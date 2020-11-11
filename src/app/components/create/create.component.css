@@ -11,12 +11,8 @@
     border-radius: 15px;
     margin-bottom: 1rem;
 }
-.success{
-    background:  rgb(0, 112, 6);
-}
-.failed{
-    background:  rgb(180, 0, 0);
-}
+.success{ background:  rgb(0, 112, 6); }
+.failed{ background:  rgb(180, 0, 0); }
 .message a{
     color: white;
 }
