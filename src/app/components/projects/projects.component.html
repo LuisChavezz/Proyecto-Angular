@@ -1,9 +1,9 @@
 <div class="container">
     <h2>Proyectos</h2>
-    <ul>
+    <ul class="project">
         <li *ngFor="let project of projects" >
-            <h3>{{project.name}}</h3>
-            <p>{{project.year}}</p>
+            <h3>{{project.name}} ({{project.year}})</h3>
+            <img src="{{ url+'get-image/'+project.image }}" *ngIf="project.image" />
         </li>
     </ul>
 </div>
