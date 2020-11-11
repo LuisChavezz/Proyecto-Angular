@@ -2,8 +2,11 @@
     <h2>Proyectos</h2>
     <ul class="project">
         <li *ngFor="let project of projects" >
+            
             <h3>{{project.name}} ({{project.year}})</h3>
-            <img src="{{ url+'get-image/'+project.image }}" *ngIf="project.image" />
+            <a [routerLink]="['/project', project._id]" >
+                <img src="{{ url+'get-image/'+project.image }}" *ngIf="project.image" />
+            </a>
         </li>
     </ul>
 </div>

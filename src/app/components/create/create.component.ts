@@ -13,6 +13,7 @@ import { global } from '../../services/global';
 export class CreateComponent implements OnInit {
   public title: string;
   public project: Project; // Guarda el modelo 'project'
+  public save_project;
   public status: string;
   public filesToUpload: Array<File>;
 
@@ -36,9 +37,10 @@ export class CreateComponent implements OnInit {
           //Upload Image
           this._uploadService.makeFileRequest( global.url+"upload-image/"+response.project._id, [], this.filesToUpload, 'image' )
           .then((result:any) => {
+            this.save_project = result.project;
             console.log(result);
-            this.status = 'success';
-            form.reset();
+            this.status = 'success'; //**Para el mensaje**
+            form.reset(); //Resetea el formulario
           });
 
         }
