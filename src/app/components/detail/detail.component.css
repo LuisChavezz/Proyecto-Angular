@@ -1,0 +1,62 @@
+.container h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project{
+    display: flex;
+    justify-content: flex-start;
+}
+/*.Project Part I*/
+.project img{
+    flex-basis: 20%;
+    height: 300px;
+    width: 300px;
+    margin-right: 2rem;
+}
+
+/*.Project Part II*/
+.project .info{ 
+    flex-basis: 30%;
+    text-align: center; 
+    padding: 0px 1rem;
+    margin-right: 2rem;
+}
+.project .info h3{ 
+    margin-bottom: 0.5rem; 
+    background: rgb(70, 70, 70); 
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+}
+.project .info p{ margin-bottom: 1rem; }
+
+/*.Project Part III*/
+.project .buttons {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.project .buttons p{
+    margin-bottom: 3rem;
+}
+.project .buttons a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 1rem 1rem;
+    border-radius: 50px;
+    opacity: 0.7;
+}
+.project .buttons a:hover{
+    opacity: 1;
+}
+.project .buttons .edit{
+        background: rgb(0, 112, 6);
+}
+.project .buttons .delete{
+    background: rgb(200, 0, 0);
+}
