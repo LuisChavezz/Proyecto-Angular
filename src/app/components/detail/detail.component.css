@@ -59,4 +59,5 @@
 }
 .project .buttons .delete{
     background: rgb(200, 0, 0);
+    cursor: pointer;
 }
