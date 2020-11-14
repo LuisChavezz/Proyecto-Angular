@@ -40,4 +40,17 @@ export class DetailComponent implements OnInit {
       }
     )
   }
+
+  deleteProject(id){
+    this._projectService.deleteProject(id).subscribe(
+      response => {
+        if(response.project){
+          this._router.navigate(['/proyectos']); //Redirigirá a la página 'proyectos' una vez borrado el proyecto.
+        }
+      },
+      error => {
+        console.error(<any>error);
+      }
+    )
+  }
 }
