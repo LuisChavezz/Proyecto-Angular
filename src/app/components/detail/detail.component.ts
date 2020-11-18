@@ -13,6 +13,7 @@ import { Router, ActivatedRoute, Params} from '@angular/router';
 export class DetailComponent implements OnInit {
   public url: string;
   public project: Project;
+  public confirm: boolean;
 
   constructor(
     private _projectService: ProjectService,
@@ -20,7 +21,8 @@ export class DetailComponent implements OnInit {
     private _route: ActivatedRoute
   ) { 
     this.url = global.url;
-  }
+    this.confirm = false;
+}
 
   ngOnInit(): void { 
     this._route.params.subscribe( params => { // Recoge el parámetro de la URL
@@ -39,6 +41,10 @@ export class DetailComponent implements OnInit {
         console.error(<any>error);
       }
     )
+  }
+
+  setConfirm(confirm){
+    this.confirm = confirm;
   }
 
   deleteProject(id){
