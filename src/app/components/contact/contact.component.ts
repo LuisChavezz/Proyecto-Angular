@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
-//declare var $:any;
+//import * as $ from 'jquery';
+declare var $:any;
 
 @Component({
   selector: 'app-contact',
@@ -12,7 +12,13 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    $("body").css("background", "white");
+    $(function(){
+      $('.bxslider').bxSlider({
+        mode: 'fade',
+        captions: true,
+        slideWidth: 600
+      });
+    });
   }
 
 }
