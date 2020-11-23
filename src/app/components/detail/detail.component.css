@@ -56,6 +56,7 @@
 }
 .project .buttons .edit{
         background: rgb(0, 112, 6);
+        cursor: pointer;
 }
 .project .buttons .delete{
     background: rgb(200, 0, 0);

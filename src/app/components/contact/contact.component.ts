@@ -8,17 +8,19 @@ declare var $:any;
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent implements OnInit {
+  public widthSlider: number;
+  public anchoToSlider: number;
 
   constructor() { }
 
   ngOnInit(): void {
-    $(function(){
-      $('.bxslider').bxSlider({
-        mode: 'fade',
-        captions: true,
-        slideWidth: 600
-      });
-    });
+    
+  }
+  cargarSlider(){
+    this.anchoToSlider = this.widthSlider;
   }
 
+  resetSlider(){
+    this.anchoToSlider = null;
+  }
 }

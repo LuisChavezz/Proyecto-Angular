@@ -14,6 +14,7 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ErrorComponent } from './components/error/error.component';
 import { DetailComponent } from './components/detail/detail.component';
 import { EditComponent } from './components/edit/edit.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EditComponent } from './components/edit/edit.component';
     ProjectsComponent,
     ErrorComponent,
     DetailComponent,
-    EditComponent
+    EditComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
