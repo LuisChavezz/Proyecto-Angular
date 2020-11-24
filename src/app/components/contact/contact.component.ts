@@ -10,6 +10,7 @@ declare var $:any;
 export class ContactComponent implements OnInit {
   public widthSlider: number;
   public anchoToSlider: number;
+  public autor: any;
 
   constructor() { }
 
@@ -22,5 +23,10 @@ export class ContactComponent implements OnInit {
 
   resetSlider(){
     this.anchoToSlider = null;
+  }
+
+  getAutor(event){
+    this.autor = event;
+    console.log(this.autor);
   }
 }

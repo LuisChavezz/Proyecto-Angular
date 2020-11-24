@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 declare var $:any;
 
 @Component({
@@ -8,7 +8,17 @@ declare var $:any;
 })
 export class SliderComponent implements OnInit {
   @Input() ancho: number; //Propiedad que recoje al información de la plantilla 'contact'
-  constructor() { }
+
+  public autor: any;
+
+  @Output() getAutor = new EventEmitter();
+
+  constructor() {
+    this.autor = {
+      name: "Luigi",
+      web: "luigichavezz"
+    }
+   }
 
   
   ngOnInit(): void {
@@ -19,4 +29,9 @@ export class SliderComponent implements OnInit {
       slideWidth: this.ancho
     });
   }
+
+  lanzar(event){
+    this.getAutor.emit(this.autor);
+  }
+
 }

@@ -5,6 +5,13 @@
   <input type="number" [(ngModel)]="widthSlider" (keyup.enter)="cargarSlider()" (keydown.enter)="resetSlider()" />
 
   <div *ngIf="anchoToSlider">
-    <app-slider [ancho]="anchoToSlider"></app-slider> <!--Carga el componente 'slider' y modifica-->
+    <app-slider 
+      [ancho]="anchoToSlider"
+      (getAutor)="getAutor($event)"
+    ></app-slider> <!--Carga el componente 'slider' y modifica-->
+  </div>
+
+  <div *ngIf="autor" >
+    {{autor.name + " / " + autor.web}}
   </div>
 </div>
