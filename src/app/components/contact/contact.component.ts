@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 //import * as $ from 'jquery';
 declare var $:any;
 
@@ -12,10 +12,12 @@ export class ContactComponent implements OnInit {
   public anchoToSlider: number;
   public autor: any;
 
+  @ViewChild('texto', {static: true}) textos: any; //Selección del elemento HTML
+
   constructor() { }
 
   ngOnInit(): void {
-    
+    console.log(this.textos.nativeElement.textContent);
   }
   cargarSlider(){
     this.anchoToSlider = this.widthSlider;
